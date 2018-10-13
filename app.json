@@ -1,0 +1,26 @@
+{
+  "pages":[
+    "pages/index/index",
+    "pages/CommodityDetails/CommodityDetails",
+    "pages/my/my",
+    "pages/factoryoutlet/factoryoutlet",
+    "pages/discounts/discounts",
+    "pages/coupon/coupon",
+    "pages/Purchases/Purchases",    
+    "pages/videodetails/videodetails",
+    "pages/serve/serve",
+    "pages/mydiscount/mydiscount",
+    "pages/myorder/myorder",
+    "pages/newcarsale/newcarsale",
+    "pages/consult/consult",
+    "pages/Advisorydetails/Advisorydetails",
+    "pages/Travelarticles/Travelarticles",
+    "pages/quickcar/quickcar"
+  ],
+ "window": {
+  "backgroundTextStyle": "light",
+  "navigationBarBackgroundColor": "#4ea5f2",
+  "navigationBarTextStyle": "white",
+  "backgroundColorTop": "black"
+}
+}

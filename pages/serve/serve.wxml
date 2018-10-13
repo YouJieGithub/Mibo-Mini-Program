@@ -1,0 +1,32 @@
+<!-- 服务 begin -->
+<!-- 菜单 -->
+<view>
+  <my-component>
+    <!-- 这部分内容将被放置在组件 <slot> 的位置上 -->
+  </my-component>
+</view>
+<view class='serve-banner'>
+  <image src='../../images/307724753033705757.png'></image>
+</view>
+
+<!-- 内容 begin -->
+<view class='serve-box'>
+     <view class='serve-item'>
+         <view class='serve-b'><navigator><text>全款购车</text></navigator></view>
+         <view class='serve-p'><navigator><text>分期购车</text></navigator></view>
+     </view>
+     <view class='serve-item'>
+         <view class='serve-y'><navigator><text>新车自驾游</text></navigator></view>
+         
+     </view>
+    <view class='serve-item'>
+         <view><navigator><text>保养套餐</text></navigator></view>
+         <view><navigator><text>维修</text></navigator></view>
+     </view>
+   <view class='serve-item'>
+         <view><navigator><text>实施救援</text></navigator></view>
+         <view><navigator><text>二手车辆置换</text></navigator></view>
+     </view>
+</view>
+<!-- 内容 end -->
+<!-- 服务 end -->

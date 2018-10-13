@@ -1,0 +1,50 @@
+<!-- banner gegin -->
+<view class='my-banner'>
+  <image src='../../images/mybanner.png' class='mybanner'>
+      <image src='../../images/my_031_03.png' class='mylogo'></image>
+  </image>
+</view>
+<!-- banner end -->
+<!-- 我的内容 begin -->
+  <view class='my-box'>
+    <navigator url='../mydiscount/mydiscount'>
+    <view class='my-view my-yh'>
+    <text class='f24'>我的优惠</text>
+    <view class='my-xiala'>
+      
+           <image src='../../images/my_10.png'></image>
+    </view>
+    </view>
+     </navigator>
+  <navigator url='../myorder/myorder'>
+      <view class='my-view my-dd'>
+      <text class='f24'>我的订单</text>
+      <view class='my-xiala'>    
+        <image src='../../images/my_10.png'></image>   
+      </view>
+      </view>
+  </navigator>
+    <view class='my-view my-lxkf'>
+    <text class='f24'>联系客服</text>
+    <view class='my-xiala'>
+      <image src='../../images/my_10.png'></image>
+    </view>
+    </view>
+
+    <view class='my-view my-yjfk'>
+    <text class='f24'>意见反馈</text>
+    <view class='my-xiala'>
+      <image src='../../images/my_10.png'></image>
+    </view>
+    </view>
+
+    <view class='my-view my-sz'>
+    <text class='f24'>设置</text>
+    <view class='my-xiala'>
+      <image src='../../images/my_10.png'></image>
+    </view>
+    </view>
+
+    
+  </view>
+<!-- 我的内容 end -->

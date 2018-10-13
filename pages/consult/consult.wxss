@@ -1,0 +1,33 @@
+/* pages/consult/consult.wxss */
+/* banner  begin*/
+.consult-banner image{
+  width: 750rpx;
+  height: 250rpx;
+}
+/* banner end */
+/* 汽车咨询 begin */
+.consult-content{
+  padding: 20rpx;
+   display: flex;
+  justify-content: space-between;
+}
+.consult-img{
+  width: 199rpx;
+  height: 168rpx;
+}
+.consult-right{
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  padding: 0 15rpx;
+}
+.f24{
+  font-size: 24rpx;
+}
+.f18{
+  	font-size: 18rpx;
+}
+.consult-time{
+  text-align: right;
+}
+/* 汽车咨询 end */

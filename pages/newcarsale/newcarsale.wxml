@@ -1,0 +1,30 @@
+<!-- 新车特惠 begin -->
+<!-- 菜单 -->
+<view>
+  <my-component>
+    <!-- 这部分内容将被放置在组件 <slot> 的位置上 -->
+  </my-component>
+</view>
+<view class='newcarsale'>
+    <view class='newcarsale-box'>
+      <view class='newcarsale-img'>
+        <image src='../../images/newcarsale_03.png'></image>
+      </view>
+      <view class='newcarsale-right'>
+        <view>
+            <text class='f23'>吉利博越 </text><text class='f19'>（1.8TD自动两驱智联型4G互联版）</text>
+        </view>
+        <view>
+            <text class='newcarsale-zdj'>指导价：129800元 </text>
+        </view>
+        <view>
+            <text class='red f23'style='margin-right:50rpx;'>首付：36666元</text><text class='red f23'> 月供：3588元</text>
+        </view>
+        <view>
+             <image class="newcarsale-yhj" src='../../images/newcarsale1_03.png'></image>
+              <navigator url='../CommodityDetails/CommodityDetails'><button class='newcarsale-subscribe'>立即预约</button></navigator>
+        </view>
+      </view>
+    </view>
+</view>
+<!-- 新车特惠 end -->

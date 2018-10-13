@@ -1,0 +1,79 @@
+/* 快选车库 begin */
+
+.quickcar{
+  padding: 30rpx 31rpx;
+    display: flex;
+  justify-content: space-between;
+}
+.quickcar-box{
+  padding: 30rpx 0;
+ display: flex;
+  flex-direction: column;
+  justify-content: center;
+  width: 318rpx;
+	height: 460rpx;
+	border: solid 1rpx #6d6d6d;
+
+}
+.quickcar-img image{
+  width: 247rpx;
+	height: 131rpx;
+  margin-left: 30rpx;
+}
+.f23{
+  font-size: 23rpx;
+}
+.f24{
+  font-size: 24rpx;
+}
+.forage{
+  color: #ff6000;
+}
+.textcenter{
+  text-align: center;
+}
+.f19{
+  font-size: 19rpx;
+}
+.quickcar-right{
+  padding-left: 10rpx;
+}
+.quickcar-right view{
+  width: 318rpx;
+	height: 36rpx;
+  line-height: 36rpx;
+}
+.quickcar-right view:nth-child(5){
+  margin-top: 10rpx;
+}
+.quickcar-zdj{
+  width: 170rpx;
+	height: 19rpx;
+	font-family: MicrosoftYaHei;
+	font-size: 20rpx;
+	font-weight: normal;
+	font-stretch: normal;
+	line-height: 30rpx;
+	color: #ff7200;
+}
+.red{
+  color: #ff0000;
+}
+.quickcar-yhj{
+  	width: 71rpx;
+	height: 39rpx;
+}
+.quickcar-subscribe{
+ width: 177rpx;
+	height: 35rpx;
+	background-color: #ed6130;
+	border-radius: 10rpx;
+  font-size: 24rpx;
+	line-height: 30rpx;
+	color: #ffffff;
+  margin: 0;
+  padding: 0;
+  left:70rpx;
+  top:10rpx;
+}
+/* 快选车库 end */

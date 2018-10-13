@@ -1,0 +1,9 @@
+<!--pages/Travelarticles/Travelarticles.wxml-->
+    <view class='Traveldown-article'>
+        <view><image src='../../images/467046927263051009.jpg'></image></view>
+        <view>
+          <text>美丽的青藏高原</text>
+          <text>朋友你去过青藏高原吗？在那里有一座座连绵起伏的山峰叫昆仑山。它的平均海拔在5500—6000米，山脉全长2500公里……</text>
+          <text>2018-06-08</text>
+        </view>
+      </view>

@@ -1,0 +1,196 @@
+<!--pages/CommodityDetails/CommodityDetails.wxml-->
+      <!-- // 引入模板 -->
+<import src="../../wxParse/wxParse.wxml"/>
+<!-- 页面轮播图 -->
+<view class='swiperCar'>
+  <swiper indicator-dots="{{indicatorDots}}" autoplay="{{autoplay}}" interval="{{interval}}" duration="{{duration}}" circular="{{circular}}">
+    <block wx:for="{{imgUrls}}" wx:key="*this">
+      <swiper-item>
+        <image src="{{item}}" class="slide-image"/>
+      </swiper-item>
+    </block>
+  </swiper>
+</view>
+<!-- 车型介绍 -->
+<view class='Services'>
+  <text>别克威朗（2018款三厢15S自动进取型）</text>
+</view>
+<view class='modal {{winmodal.showModal}}' catchtouchmove="move" >
+
+   <view class='Installmentplan' bindtap='Installmentplan'>
+     <scroll-view scroll-y style="height: 600rpx;">
+   
+    <!-- 36期 -->
+      <view class='Installmentplan-content'>
+        36期金融方案
+          <block wx:for='{{stagesFinancial.thirtySixScheme}}' wx:key="*this">
+          <view class="{{item.checked?'Installmentplanborder':'Installmentplanbordera'}}" id="{{item.id}}">
+          <!-- 首付 -->
+          <view><text>首付10%</text><text>{{item.sSum}}万</text></view>
+          <!-- 月供 -->
+          <view><text>月供</text><text>{{item.mip}}</text></view>
+          <!-- 月供 -->
+          <view><text>期数</text><text>36</text></view>
+        </view>
+          </block>
+      </view>
+      <!-- 48期 -->
+      <view class='Installmentplan-content'>
+        48期金融方案
+        <block wx:for='{{stagesFinancial.fortyEightScheme}}'  wx:key="*this">
+        <view id="{{item.id}}" class="{{item.checked?'Installmentplanborder':'Installmentplanbordera'}}">
+          <!-- 首付 -->
+          <view><text>首付10%</text><text>{{item.sSum}}万</text></view>
+          <!-- 月供 -->
+          <view><text>月供</text><text>{{item.mip}}</text></view>
+          <!-- 月供 -->
+          <view><text>期数</text><text>48</text></view>
+        </view>
+        </block>
+      </view>
+      </scroll-view>
+    </view>
+  <view class='modalBg' bindtap='closewin'></view>    
+</view>
+
+<!-- 分期+全款 -->
+<view>
+  <view class="nav bc_white">
+    <view class="{{selected?'red':'default'}}" bindtap="selected">分期</view>
+    <view class="{{selected1?'red':'default'}}" bindtap="selected1">全款</view>
+  </view>
+  <view class="{{selected?'show':'hidden'}}">
+    <!-- 首付 -->
+    <!-- {{'secode?down-payment:Installmentplan'}} -->
+    <view class='down-payment payment {{winmodal.showMask}}' catchtap='openWin'>
+    <view>
+      首付<text>{{Installmentplantetx}}万 </text>
+        <text>开走</text>
+        <text>(包含购置税、保险、挂牌等所有费用）</text>
+    </view>
+    </view>
+      <!-- 提车地区 -->
+    <view class="section-region payment">
+        <view class="section__title-region">提车地区：</view>
+        <picker bindchange="bindPickerChange" value="{{index}}" range="{{array}}">
+          <view class="picker-region">{{array[index]}}</view>
+        </picker>
+    </view>
+    <!-- 车型及颜色 -->
+    <view class="section payment">
+           <view class="section__title">车型颜色：</view>
+              <picker  bindchange="bindMultiPickerChange" value="{{multiIndex}}" range="{{multiArray}}">
+               <view class="picker">{{multiArray[multiIndex]}}</view>
+           </picker>
+       </view>
+    <view class='discounts payment' style='background:none'>优惠：<text>1.1万</text></view>
+    <!-- 你的需求 -->
+    <view class='yourRequirement payment'>
+      你的需求
+        <view class='yourRequirement-content'>
+            <checkbox-group bindchange="checkboxChange">
+              <label class="checkbox" wx:for="{{carImg}}" wx:key="*this">
+                <view><image src="{{item.img}}"></image></view>
+                <checkbox value="{{item.name}}"/>{{item.value}}
+              </label>
+            </checkbox-group>
+        </view>
+    </view>
+  </view>
+  <view class="{{selected1?'show':'hidden'}}">
+    <!-- 首付 -->
+    <view class='down-payment payment'><text></text></view>
+      <!-- 提车地区 -->
+    <view class="section-region payment">
+        <view class="section__title-region">提车地区：</view>
+        <picker bindchange="bindPickerChange" value="{{index}}" range="{{array}}">
+          <view class="picker-region">{{array[index]}}</view>
+        </picker>
+    </view>
+    <!-- 车型及颜色 -->
+    <view class="section payment">
+           <view class="section__title">车型颜色：</view>
+              <picker  bindchange="bindMultiPickerChange" value="{{multiIndex}}" range="{{multiArray}}">
+               <view class="picker">{{multiArray[multiIndex]}}</view>
+           </picker>
+       </view>
+    <view class='discounts payment'>优惠：<text>1.1万</text></view>
+    <!-- 你的需求 -->
+    <view class='yourRequirement payment'>
+      你的需求
+        <view class='yourRequirement-content'>
+            <checkbox-group bindchange="checkboxChange">
+              <label class="checkbox" wx:for="{{carImg}}" wx:key="*this">
+                <view><image src="{{item.img}}"></image></view>
+                <checkbox value="{{item.name}}"/>{{item.value}}
+              </label>
+            </checkbox-group>
+        </view>
+    </view>
+  </view>
+</view>
+<!-- 购车优势+参数配置+车型图片+评价 -->
+<view>
+  <view class="nav bc_white">
+    <view class="{{selected10?'red':'default'}}" bindtap="selected10">购车优势</view>
+    <view class="{{selected12?'red':'default'}}" bindtap="selected12">参数配置</view>
+    <view class="{{selected13?'red':'default'}}" bindtap="selected13">车型图片</view>
+    <view class="{{selected14?'red':'default'}}" bindtap="selected14">评价</view>
+  </view>
+  <view class="{{selected10?'show':'hidden'}} CarAdvantage"><block wx:for="{{CarAdvantage}}" wx:key="*this"><image src='{{item}}'></image></block></view>
+  <view class="{{selected12?'show':'hidden'}}">参数配置</view>
+  <view class="{{selected13?'show':'hidden'}}">
+
+<!-- //这里data中article为bindName -->
+<template is="wxParse" data="{{wxParseData:q.nodes}}"/>
+  
+  </view>
+  <view class="{{selected14?'show':'hidden'}}">
+    <!-- 评论框 -->
+    <view class='CommentBox'>
+      <form report-submit="false" bindsubmit="formSubmit">
+        <textarea auto-focus="false" focus="false" placeholder='请输入你的评价'></textarea>
+        <button form-type="submit">发表</button>
+      </form>
+    </view>
+    <!-- 评论内容 -->
+    <view>
+      <view class="nav bc_white" style='background:none;border-bottom:dashed 1rpx #333333;'>
+        <view class="{{selected17?'red':'default'}}" bindtap="selected17">全部评价(<text>60</text>)</view>
+        <view class="{{selected15?'red':'default'}}" bindtap="selected15">好评(<text>55</text>)</view>
+        <view class="{{selected16?'red':'default'}}" bindtap="selected16">差评(<text>25</text>)</view>
+      </view>
+      <view class="{{selected17?'show':'hidden'}}">
+          <view class='AllEvaluation'>
+              <view>
+                <image src=''></image>
+                <text>评论者姓名</text>
+              </view>
+              <view>
+                <text>买车前，已经听说过飞度的各种好了，后来自己又做了好多功课，诸如汽车之家、贴吧什么的，每天都看。买了后，觉得选择飞度是很明智的，省油好开，质量也不必担心，网上关于地球梦的美言，让我很放心！</text>
+              </view>
+          </view>
+      </view>
+      <view class="{{selected15?'show':'hidden'}}">
+          <view class='AllEvaluation'>
+              <view>
+                <image src=''></image>
+                <text>评论者姓名2</text>
+              </view>
+              <view>
+                <text>买车前，已经听说过飞度的各种好了，后来自己又做了好多功课，诸如汽车之家、贴吧什么的，每天都看。买了后，觉得选择飞度是很明智的，省油好开，质量也不必担心，网上关于地球梦的美言，让我很放心！</text>
+              </view>
+          </view>
+      </view>
+       <view class="{{selected16?'show':'hidden'}}">
+        <view class='AllEvaluation'></view>
+       </view>
+    </view>
+  </view>
+</view>
+<!-- 降价通知+立即预约+立即咨询 -->
+<view class='immediately'>
+  <view><image src='../../images/parameterize_40.png'></image><text>降价通知</text></view>
+  <view catchtap='PhoneCallTask'>立即咨询</view>
+  <view catchtap='successfulAppointment'>立即预约</view>
+</view>

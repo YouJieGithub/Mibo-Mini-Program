@@ -1,0 +1,114 @@
+/* 优惠福利 begin */
+.discounts-banner{
+  padding: 10rpx 0;
+}
+.discounts-banner image{
+  width: 750rpx;
+	height: 250rpx;
+}
+
+/* 内容 */
+.discounts{
+  padding: 13rpx;
+    display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+}
+.discounts-box{
+  display: flex;
+  justify-content: center;
+  padding: 10rpx 0;
+}
+.discounts-car{
+   display: flex;
+  flex-wrap: wrap;
+  align-content: space-between;
+  padding-left:20rpx; 
+}
+.discounts-column{
+  flex-basis: 50%;
+  display: flex;
+  justify-content: space-between;
+}
+.discounts-item{
+  width: 130rpx;
+	height: 133rpx;
+	background-color: #ffffff;
+	border: solid 1px #000000;
+  position: relative;
+  margin: 10rpx ;
+}
+.discounts-sf{
+  width: 33rpx;
+  height: 30rpx;
+  position: absolute;
+  top: 0;
+  left: 0;
+}
+.discounts-cars{
+  width: 121rpx;
+	height: 61rpx;
+ position: absolute;
+ top: 25rpx;
+ left: 5rpx;
+}
+.discounts-text{
+  text-align: center;
+  width: 131rpx;
+	height: 23rpx;
+	font-size: 23rpx;
+	line-height:23rpx;
+	color: #ffffff;
+  background: black;
+  position: absolute;
+  bottom: 0;
+}
+.discounts-money{
+  width: 455rpx;
+	height: 270rpx;
+	border: solid 1rpx #000000;
+  margin-right: 50rpx;
+  padding: 50rpx 20rpx 20rpx 20rpx;
+}
+.discounts-money1{
+  margin-left: 30rpx;
+  margin-right: 0;
+}
+.f34{
+  font-size: 34rpx;
+}
+.corange{
+  color: #ff8400;
+}
+.discounts-but{
+  background-color: #ed6130;
+	border-radius: 20rpx;
+  width: 189rpx;
+	height: 40rpx;
+  line-height: 40rpx;
+  font-size: 24rpx;
+  color: #ffffff;
+  margin: 40rpx ;
+}
+.f22{
+  font-size: 22rpx;
+}
+.discounts-ylq{
+  text-align: center;
+  margin-top: 20rpx;
+}
+.discounts-yhqbox{
+  padding: 10rpx;
+}
+.discounts-yhq{
+  width: 702rpx;
+	height: 74rpx;
+	background-color: #ed6130;
+  font-size: 30rpx;
+	font-weight: normal;
+	font-stretch: normal;
+	line-height: 74rpx;
+	letter-spacing: 0px;
+	color: #ffffff;
+}
+/* 优惠福利 end */

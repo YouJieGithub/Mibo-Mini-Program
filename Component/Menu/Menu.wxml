@@ -1,0 +1,12 @@
+<!--component/Menu/Menu.wxml-->
+<view>
+  <!-- 菜单栏 -->
+<view class='Mmenubar'>
+  <navigator url='../../pages/index/index' open-type="reLaunch">首页</navigator>
+  <navigator url='../../pages/newcarsale/newcarsale'>进入车库</navigator>
+  <navigator url='../../pages/consult/consult'>论坛</navigator>
+  <navigator url='../../pages/serve/serve'>服务</navigator>
+  <navigator url='../../pages/my/my'><image src='../../images/my_031_03.png' class='userimg'></image></navigator>
+</view>
+  <slot></slot>
+</view>

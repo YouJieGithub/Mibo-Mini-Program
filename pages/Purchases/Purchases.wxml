@@ -1,0 +1,73 @@
+<!--pages/Purchases/Purchases.wxml-->
+<!-- 意向车型 -->
+<view class='Interestedmodels'>
+意向车型：
+        <view class="section">
+           <view class="section__title">车型一<text>(必选)</text></view>
+              <picker mode="multiSelector"  bindchange="bindMultiPickerChangea" bindcolumnchange="bindMultiPickerColumnChangea" value="{{multiIndexa}}" range="{{multiArraya}}">
+               <view class="picker">
+                <text>{{multiArraya[0][multiIndexa[0]]}}</text>
+                <text>{{multiArraya[1][multiIndexa[1]]}}</text>
+               </view>
+           </picker>
+       </view>
+       <view class="section">
+           <view class="section__title">车型二<text>(可选)</text></view>
+              <picker mode="multiSelector"  bindchange="bindMultiPickerChangeb" bindcolumnchange="bindMultiPickerColumnChangeb" value="{{multiIndexb}}" range="{{multiArrayb}}">
+               <view class="picker">
+                <text>{{multiArrayb[0][multiIndexb[0]]}}</text>
+                <text>{{multiArrayb[1][multiIndexb[1]]}}</text>
+               </view>
+           </picker>
+       </view>
+       <view class="section">
+           <view class="section__title">车型三<text>(可选)</text></view>
+              <picker mode="multiSelector"  bindchange="bindMultiPickerChangec" bindcolumnchange="bindMultiPickerColumnChangec" value="{{multiIndexc}}" range="{{multiArrayc}}">
+               <view class="picker">
+                <text>{{multiArrayc[0][multiIndexc[0]]}}</text>
+                <text>{{multiArrayc[1][multiIndexc[1]]}}</text>
+                </view>
+           </picker>
+       </view>
+</view>
+<!-- 计划购车时间 -->
+<view class='ScheduleCarPurchases'>
+  计划购车时间
+ <radio-group class="radio-group" bindchange="radioChangePurchases">
+  <label wx:for="{{ScheduleCarPurchases}}" wx:key="*this" class="radio {{item.checked?'radiof':'radiot'}}">
+    <radio value="{{item.name}}" />{{item.value}}
+  </label>
+</radio-group>
+</view>
+<!-- 付款方式 -->
+<view class='paymentMethod'>
+  付款方式
+  <radio-group class="radio-group" bindchange="radioChangeMethod">
+  <label wx:for="{{paymentMethod}}" wx:key="*this" class="radio {{item.checked?'radiof':'radiot'}}">
+    <radio value="{{item.name}}"/>{{item.value}}
+  </label>
+</radio-group>
+</view>
+<!-- 提车地区 -->
+    <view class="section-region">
+  <view class="section__title-region">提车地区</view>
+  <picker bindchange="bindPickerChange" value="{{index}}" range="{{array}}">
+    <view class="picker-region">{{array[index]}}</view>
+  </picker>
+</view>
+<!-- 手机号码 -->
+<!-- <view class='authcode'>
+  <view class='cellphonenumber'>手机号<input type="number" maxlength="11" adjust-position="false" cursor-spacing="5" bindinput='phonenumber' /></view>
+  <view class='verification-code'>
+    <view>验证码<input type="number" maxlength="4" cursor-spacing="5"></input></view>
+    <view><button size="default" plain="true" catchtap='sendVerificationCode'>{{userphong.show_get_code}}</button></view>
+  </view>
+</view>  -->
+<!-- 提交按钮 -->
+<view class='Submit'>
+  <button catchtap="fromsubmit" >提交</button>
+</view>
+<!-- 登录页面的引用 -->
+<view class='{{indexloginPage}}' bindtap='closemodal'>
+<loginPage bindmyevent="myEventListener"></loginPage>
+</view>

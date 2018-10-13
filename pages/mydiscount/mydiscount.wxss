@@ -1,0 +1,48 @@
+/* 我的优惠 begin */
+.mydiscount{
+  padding: 24rpx;
+}
+.mydiscount-box{
+  padding: 28rpx;
+  width: 646rpx;
+	height: 90rpx;
+  border-bottom: 1rpx  dashed#333333; 
+   display: flex;
+  justify-content: space-between;
+}
+.mydiscount-box view:last-child{
+  display: flex;
+  flex-direction: column;
+  justify-content: right;
+}
+.mydiscount-yh image{
+  width: 183rpx;
+	height: 92rpx;
+  position: relative;
+}
+.mydiscount-yhq{
+  position: absolute;
+  font-size: 24rpx;
+	color: #ffffff;
+  top: 30rpx;
+  left: 20rpx;
+}
+.mydiscount-button{
+  float: right;
+  width: 135rpx;
+	height: 41rpx;
+  line-height: 41rpx;
+	background-color: #ff6000;
+  font-size: 26rpx;
+  text-align: center;
+	color: #ffffff;
+  border-radius:0rpx;
+
+}
+.mydiscount-text{
+  text-align: right;
+	font-size: 22rpx;
+	color: #333333;
+  margin-top: 25rpx;
+}
+/* 我的优惠 end */

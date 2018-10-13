@@ -1,0 +1,330 @@
+/* pages/CommodityDetails/CommodityDetails.wxss */
+@import "/wxParse/wxParse.wxss";
+/* 车型轮播图 */
+.swiperCar{
+  width: 100%;
+  height: 400rpx;
+}
+.swiperCar swiper{
+  height: 400rpx;
+}
+.slide-image{
+  width: 750rpx;
+  height: 400rpx;
+}
+/* 车型介绍 */
+.Services{
+  margin: 0 28rpx;
+}
+.Services text{
+  font-size: 24rpx;
+  line-height: 60rpx;
+}
+/* 分期+全款 */
+.nav{
+  margin-top: 41rpx;
+  margin-bottom: 26rpx; 
+  width:100%;
+  height:60rpx;
+  display:flex;
+  flex-direction:row;
+  background-color: #e6e6e6;
+  }
+/* 分期金融方案 */
+.modalBg{
+  display: block;
+  position: fixed;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  width: 100%;
+  height: 100%;
+  background: #000000;
+  z-index: 100;
+  opacity: .5
+}
+.Installmentplan{
+  padding: 40rpx 0;
+  position: absolute;
+  bottom: 0;
+  z-index: 200;
+  width: 100%;
+  height: 600rpx;
+  background: #ffffff;
+  font-size: 24rpx;
+  color: #333333;
+}
+.Installmentplan-content{
+  padding: 0 24rpx;
+}
+.Installmentplan-content view{
+  margin: 20rpx 0;
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+  background: #dfdfdf;
+}
+.Installmentplan-content view view{
+  display: flex;
+  flex-direction: column;
+}
+.Installmentplan-content view view text{
+  line-height: 40rpx;
+}
+.Installmentplan-content view view text:first-child{
+  font-size: 20rpx;
+  color: #333333;
+}
+.Installmentplan-content view view text:last-child{
+  font-size: 26rpx;
+  color: #ff0000;
+}
+.Installmentplanborder{
+  border: 4rpx solid #4ea5f2;
+}
+.Installmentplanbordera{
+  border: 4rpx solid #ffffff;
+}
+.showModal,.showMask{
+  display: block;
+}
+.hideModal,hideMask{
+  display: none;
+}
+/* 默认状态*/
+.default{
+  line-height:60rpx;
+  text-align:center;
+  flex:1;
+  color:#000;
+  font-weight:bold;
+  font-size:28rpx;
+  }
+/* 选中状态*/
+.red{
+  line-height:60rpx;
+  text-align:center;
+  color:#4ea5f2;
+  flex:1;
+  font-weight:bold;
+  font-size:28rpx;
+  }
+/* 显示 */
+.show{
+  display:block;
+  }
+/* 隐藏 */
+.hidden{
+  display:none;
+  }
+  /* 分期 */
+.show{
+  margin: 0 24rpx;
+}
+.payment{
+  line-height: 57rpx;
+  border-bottom: dashed 1rpx #333;
+  background:url('data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAA8AAAAdCAYAAAB1yDbaAAAAGXRFWHRTb2Z0d2FyZQBBZG9iZSBJbWFnZVJlYWR5ccllPAAAA4RpVFh0WE1MOmNvbS5hZG9iZS54bXAAAAAAADw/eHBhY2tldCBiZWdpbj0i77u/IiBpZD0iVzVNME1wQ2VoaUh6cmVTek5UY3prYzlkIj8+IDx4OnhtcG1ldGEgeG1sbnM6eD0iYWRvYmU6bnM6bWV0YS8iIHg6eG1wdGs9IkFkb2JlIFhNUCBDb3JlIDUuNi1jMTM4IDc5LjE1OTgyNCwgMjAxNi8wOS8xNC0wMTowOTowMSAgICAgICAgIj4gPHJkZjpSREYgeG1sbnM6cmRmPSJodHRwOi8vd3d3LnczLm9yZy8xOTk5LzAyLzIyLXJkZi1zeW50YXgtbnMjIj4gPHJkZjpEZXNjcmlwdGlvbiByZGY6YWJvdXQ9IiIgeG1sbnM6eG1wTU09Imh0dHA6Ly9ucy5hZG9iZS5jb20veGFwLzEuMC9tbS8iIHhtbG5zOnN0UmVmPSJodHRwOi8vbnMuYWRvYmUuY29tL3hhcC8xLjAvc1R5cGUvUmVzb3VyY2VSZWYjIiB4bWxuczp4bXA9Imh0dHA6Ly9ucy5hZG9iZS5jb20veGFwLzEuMC8iIHhtcE1NOk9yaWdpbmFsRG9jdW1lbnRJRD0ieG1wLmRpZDo4Y2ZkMDllMi0xMjg1LThmNGItYTJjZS00ZjBmZTU3Zjc4MDEiIHhtcE1NOkRvY3VtZW50SUQ9InhtcC5kaWQ6MjY4NzlGQzFDMTVBMTFFODk4QjFCQTg4REZGMEI0MzUiIHhtcE1NOkluc3RhbmNlSUQ9InhtcC5paWQ6MjY4NzlGQzBDMTVBMTFFODk4QjFCQTg4REZGMEI0MzUiIHhtcDpDcmVhdG9yVG9vbD0iQWRvYmUgUGhvdG9zaG9wIENDIDIwMTcgKFdpbmRvd3MpIj4gPHhtcE1NOkRlcml2ZWRGcm9tIHN0UmVmOmluc3RhbmNlSUQ9InhtcC5paWQ6YTcxYzQzNzAtZGQ3NS05ZDRmLTg3NjYtODM1NGNiYTZiMzkwIiBzdFJlZjpkb2N1bWVudElEPSJhZG9iZTpkb2NpZDpwaG90b3Nob3A6NzEwYzMwZjItYjNlMS0xMWU4LThhZTQtOGNiNzY3NjkzNDQ1Ii8+IDwvcmRmOkRlc2NyaXB0aW9uPiA8L3JkZjpSREY+IDwveDp4bXBtZXRhPiA8P3hwYWNrZXQgZW5kPSJyIj8+MlZ1MwAAAWVJREFUeNqUlL1KBDEQx3O5VNY2FvcUgnqndwhWgoi1jQ/gqbBbWgp2e4If7yCKiFgKFn7cnXLca2i/trL+IxMIMW5mAsPsZPOb/Gey2UaWZUdKqR3YdlEUL0owNFkL9pzn+aoEblRVpQCd43mX5tpQMOburLC4D3dKcyMk67JhSnAAN6DwiZPgV7Y/ghKWkPQtubOnwJZwQuG4ToGOTSJB5iWwJXTYsJfggsLXmII/NYcDkD2FvVgPdKqjWLzvKbA9aLNhr4nuGIdI0GPJDko4g+u7ErTkW4YCW/sxhY8imBIcwn3AZsQwpF/CzcG+jBC8g9ukcE0LwGsP7EL+uxHu+A1bcffdCKV27I7unUmA93AbsMpJ9d8bJrgAcMK6VQBvCHSXYRJbZxI1zgOcsn4GAK+C5kzremI88BZui47DNmeUOgkTkfpvjeFolmX5AL9O8XLd3zJW8yzsE7YIcCj51n8EGACVHJSNnN82NgAAAABJRU5ErkJggg==') no-repeat center right;
+  background-size: 15rpx 29rpx;
+}
+.down-payment{
+  font-size: 26rpx;
+  color: #ff0000;
+}
+.down-payment text:nth-of-type(1){
+  font-size: 26rpx;
+  color: #ff0000;
+}
+.down-payment text:nth-of-type(2){
+ font-size: 22rpx;
+  color: #ff0000;
+}
+.down-payment text:nth-of-type(3){
+ font-size: 20rpx;
+  color: #404040;
+}
+.picker-region{
+  padding: 0 50rpx;
+}
+.picker{
+  padding: 0 50rpx;
+}
+.section-region{
+  display: flex;
+  font-size: 22rpx;
+}
+.section{
+  display: flex;
+  font-size: 22rpx;
+}
+.discounts{
+  font-size: 22rpx;
+}
+.yourRequirement{
+  height: auto;
+  font-size: 22rpx;
+  border-bottom: none;
+}
+.yourRequirement-content{
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  padding: 29rpx 0;
+  background-color: #dfdfdf;
+}
+.yourRequirement-content checkbox-group{
+  display: flex;
+  flex-wrap: wrap;
+}
+.checkbox{
+  margin: 20rpx 25rpx;
+  text-align: center;
+}
+.checkbox:nth-of-type(1) view:first-child image{
+  width: 42rpx;
+	height: 41rpx;
+}
+.checkbox:nth-of-type(2) view:first-child image{
+  width: 57rpx;
+	height: 41rpx;
+}
+.checkbox:nth-of-type(3) view:first-child image{
+  width: 36rpx;
+	height: 36rpx;
+}
+.checkbox:nth-of-type(4) view:first-child image{
+  width: 38rpx;
+	height: 33rpx;
+}
+.checkbox:nth-of-type(5) view:first-child image{
+  width: 31rpx;
+	height: 32rpx;
+}
+.checkbox:nth-of-type(6) view:first-child image{
+  width: 26rpx;
+	height: 33rpx;
+}
+.checkbox:nth-of-type(7) view:first-child image{
+  width: 22rpx;
+	height: 34rpx;
+}
+.checkbox:nth-of-type(8) view:first-child image{
+  width: 20rpx;
+	height: 26rpx
+}
+.checkbox:nth-of-type(9) view:first-child image{
+  width: 28rpx;
+	height: 28rpx;
+}
+
+/* 未选中的 背景样式 */
+checkbox .wx-checkbox-input{
+   width: 20rpx; /* 背景的宽 */
+   height: 20rpx; /* 背景的高 */
+}
+/* 选中后的 背景样式 （红色背景 无边框 可根据UI需求自己修改） */
+checkbox .wx-checkbox-input.wx-checkbox-input-checked{
+   border-color: #4ea5f2;
+}
+/* 选中后的 对勾样式 （白色对勾 可根据UI需求自己修改） */
+checkbox .wx-checkbox-input.wx-checkbox-input-checked::before{
+   width: 20rpx;/* 选中后对勾大小，不要超过背景的尺寸 */
+   height: 20rpx;/* 选中后对勾大小，不要超过背景的尺寸 */
+   line-height: 20rpx;
+   text-align: center;
+   font-size:20rpx; /* 对勾大小 30rpx */
+   color:#4ea5f2; /* 对勾颜色 白色 */
+   background: transparent;
+   transform:translate(-50%, -50%) scale(1);
+   -webkit-transform:translate(-50%, -50%) scale(1);
+}
+/* 购车优势的图片 */
+.CarAdvantage{
+  margin: 0;
+  text-align: center;
+}
+.CarAdvantage image{
+  width: 699rpx;
+  height: 905rpx;
+}
+/* 评价 */
+.CommentBox textarea{
+  width: 702rpx;
+  height: 136rpx;
+  border: solid 1rpx #000000;
+  font-size: 18rpx;
+}
+.CommentBox button{
+  display: block;
+  float: right;
+  margin-top: 15rpx;
+  margin-bottom: 38rpx;
+  width: 119rpx;
+	line-height: 36rpx;
+  font-size: 24rpx;
+  color: #ffffff;
+	background-color: #4ea5f2;
+  border-radius: 0;
+}
+/* 全部评价 */
+.AllEvaluation{
+  display: flex;
+  justify-content: space-between;
+}
+.AllEvaluation view:first-child{
+  display: flex;
+  width: 90rpx;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+.AllEvaluation view:first-child image{
+  width: 31rpx;
+	height: 31rpx;
+  border-radius: 50%;
+  background-color: #3333;
+}
+.AllEvaluation view:first-child text{
+  white-space:nowrap;
+  font-size: 18rpx;
+  color: #323232;
+}
+.AllEvaluation view:last-child{
+  width: 569rpx;
+  margin-left: 25rpx;
+}
+.AllEvaluation view:last-child text{
+  font-size: 18rpx;
+  color: #000000;
+}
+/* 降价通知+立即预约+立即咨询 */
+.immediately{
+  display: flex;
+  justify-content: center;
+  font-size: 24rpx;
+  border-top: solid 1rpx #333333;
+}
+.immediately view{
+  text-align: center;
+  line-height: 74rpx;
+}
+.immediately view:nth-of-type(1){
+  width: 284rpx;
+}
+.immediately view:nth-of-type(1) image{
+  margin-right: 5rpx;
+  width: 45rpx;
+  height: 49rpx;
+  vertical-align: middle;
+}
+.immediately view:nth-of-type(2){
+  width: 229rpx;
+	background-color: #4ea5f2;
+  color: #ffffff;
+}
+.immediately view:nth-of-type(3){
+  width: 238rpx;
+	background-color: #ed6130;
+  color: #ffffff;
+}

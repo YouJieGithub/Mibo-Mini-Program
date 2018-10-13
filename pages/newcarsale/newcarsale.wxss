@@ -1,0 +1,59 @@
+/* 新城特惠 begin */
+
+.newcarsale{
+  padding: 50rpx 31rpx;
+}
+.newcarsale-box{
+  padding: 30rpx 0;
+  display: flex;
+  justify-content: space-between;
+}
+.newcarsale-img image{
+  width: 247rpx;
+	height: 131rpx;
+}
+.f23{
+  font-size: 23rpx;
+}
+.f19{
+  font-size: 19rpx;
+}
+.newcarsale-right view{
+  width: 396rpx;
+	height: 36rpx;
+  line-height: 36rpx;
+}
+.newcarsale-right view:nth-child(4){
+  margin-top: 10rpx;
+}
+.newcarsale-zdj{
+  width: 170rpx;
+	height: 19rpx;
+	font-family: MicrosoftYaHei;
+	font-size: 20rpx;
+	font-weight: normal;
+	font-stretch: normal;
+	line-height: 30rpx;
+	color: #ff7200;
+}
+.red{
+  color: #ff0000;
+}
+.newcarsale-yhj{
+  	width: 71rpx;
+	height: 39rpx;
+}
+.newcarsale-subscribe{
+  width: 140rpx;
+	height: 35rpx;
+	background-color: #ed6130;
+	border-radius: 10rpx;
+  font-size: 24rpx;
+	line-height: 30rpx;
+	color: #ffffff;
+  margin: 0;
+  padding: 0;
+  left:214rpx;
+  top:-36rpx;
+}
+/* 新车特惠 end */

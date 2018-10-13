@@ -1,0 +1,116 @@
+/* 厂家直销banner */
+.factoryoutlet-banner image{
+  width: 749rpx;
+	height: 250rpx;
+}
+/* 厂家直销banner */
+/* 厂家直销 内容 */
+.factoryoutlet-top{
+  padding: 30rpx 24rpx;
+}
+.factoryoutlet-topbox{
+  width: 702rpx;
+	height: 250rpx;
+	border: solid 5rpx #9a9a9a;
+    display: flex;
+  justify-content: center;
+}
+.factoryoutlet-topboximg{
+  padding: 30rpx 30rpx 30rpx 0;
+}
+.factoryoutlet-topbox image{
+  width: 335rpx;
+	height: 177rpx;
+}
+.factoryoutlet-toptext{
+  text-align: center;
+  width: 266rpx;
+	height: 52rpx;
+	line-height: 30rpx;
+  padding: 30rpx 0 ;
+}
+.f23{
+  font-size: 23rpx;
+}
+.f19{
+  font-size: 19rpx;
+}
+.factoryoutlet-of26{
+  padding: 20rpx;
+}
+.of26{
+	font-size: 26rpx;
+	color: #ff4200;
+}
+.factoryoutlet-subscribe{
+  width: 169rpx;
+	height: 37rpx;
+  line-height: 30rpx;
+	background-color: #ff6c00;
+	border-radius: 10rpx;
+  font-size: 26rpx;
+  color: #ffffff;
+}
+.factoryoutlet-center{
+  display: flex;
+  flex-direction: column;
+  flex-wrap: wrap;
+  align-content: space-between;
+  width: 662rpx;
+	height: 1040rpx;
+}
+.factoryoutlet-centerbox{
+  width: 251rpx;
+	height: 291rpx;
+	border: solid 5rpx #9a9a9a;
+  margin: 10rpx 0 15rpx 40rpx;
+   display: flex;
+  flex-direction: column;
+  justify-content: center;
+  padding: 10rpx 20rpx 10rpx 40rpx;
+}
+.factoryoutlet-centerboximg image{
+  width: 238rpx;
+	height: 118rpx;
+}
+.of22{
+	font-size: 22rpx;
+	color: #ff4200;
+}
+.factoryoutlet-subscribe1{
+  width: 104rpx;
+	height: 32rpx;
+	background-color: #ff6c00;
+	border-radius: 10rpx;
+   line-height: 30rpx;
+  font-size: 20rpx;
+  color: #ffffff;
+  padding: 0;
+  margin: 0;
+ top: -30rpx;
+ left: 146rpx;
+}
+.factoryoutlet-bottom{
+  padding: 50rpx;
+}
+.factoryoutlet-bottombox{
+  width: 650rpx;
+	height: 201rpx;
+  display: flex;
+  justify-content: space-between;
+}
+.factoryoutlet-bottomboximg image{
+  width: 309rpx;
+	height: 150rpx;
+}
+.factoryoutlet-subscribe2{
+  width: 319rpx;
+	height: 50rpx;
+	background-color: #4ea5f2;
+	border-radius: 30rpx;
+  font-size: 26rpx;
+	line-height:50rpx;
+	color: #ffffff;
+  margin-top: 10rpx;
+}
+/* 厂家直销 内容 end */

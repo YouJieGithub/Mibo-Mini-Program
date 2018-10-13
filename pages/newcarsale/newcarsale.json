@@ -1,0 +1,6 @@
+{
+  "navigationBarTitleText": "快选车库",
+  "usingComponents": {
+    "my-component": "../../../Component/Menu/Menu"
+  }
+}

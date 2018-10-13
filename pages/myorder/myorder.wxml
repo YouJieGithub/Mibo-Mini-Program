@@ -1,0 +1,23 @@
+<!-- 我的订单 begin -->
+<view class='myorder'>
+  <view class='myorder-box'>
+      <view class='myorder-ljyy'>
+          <text>预约成功</text>
+      </view>
+      <view class='myorder-content'>
+          <image src='../../images/465680039794239718.png'></image>
+          <view class='myorder-form'>
+              <view>姓名:<text>付杰</text></view>
+              <view>电话:<text>13649134857</text></view>
+              <view>车型:<text>别克威朗 </text></view>
+              <view><text> <text decode="{{true}}" space="{{true}}">&nbsp;&nbsp;&nbsp;&nbsp;</text>  2018款三厢15S自动进取型</text></view>
+              <view>颜色:<text>白色</text></view>
+              <view>提车日期:<text>2018-10-06</text></view>
+              <view>提车地区: <text>西安市未央区</text></view>
+               <view>提车方式: <text>分期</text></view>
+          </view>
+      </view>
+  </view>
+</view>
+
+<!-- 我的订单 end -->

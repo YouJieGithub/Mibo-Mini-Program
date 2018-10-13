@@ -1,0 +1,24 @@
+<!--pages/videodetails/videodetails.wxml-->
+<block wx:for="{{videodetails}}" wx:key="*this">
+<view class='videodetails' >
+  <view class='videodetails-conter'>
+    <view><video src="{{item.video}}"></video></view>
+  </view>
+  <view class='videodetails-title'>
+    <view>
+      <text>{{item.title1}}</text>
+      <text>{{item.title2}}</text>
+    </view>
+    <view class='videodetails-like-comment'>
+    <!-- 点赞功能 -->
+      <view class='videodetails-like' catchtap='qwe' data-id='{{item.id}}' >
+        <image src="{{item.videodetailslike1}}"></image>
+      </view>
+      <!-- 留言功能 -->
+      <view class='videodetails-comment'>
+        <image src='{{item.videodetailscomment}}'></image>
+      </view>
+    </view>
+  </view>
+</view>
+</block>

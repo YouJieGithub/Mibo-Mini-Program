@@ -1,0 +1,77 @@
+<!-- 优惠券 begin -->
+<view class='coupon-banner'>
+  <image src='../../images/100zhongjiang.png'></image>
+</view>
+<view class="wrapper">
+
+	<view class="header">
+		<!-- <text class="header-title"> 大转盘抽奖 </text>
+		<text class="header-subtitle">  感恩节活动大抽奖，反馈广大客户 </text>  -->
+	</view>
+
+	<view class="main">
+		<view class="canvas-container">
+    
+			<view  animation="{{animationData}}" class="canvas-content" >
+        <view><image src='../../images/coupon_03.png' class='coupon-zp'></image></view>
+				<canvas style="width: 300px; height: 300px;" class="canvas-element" canvas-id="firstCanvas"></canvas>
+      
+				<view class="canvas-list" wx:for="{{awardsList}}" wx:key="unique">
+					<view class="canvas-item">
+				  		<text class="canvas-item-text" style="-webkit-transform: rotate({{item.turn}});transform: rotate({{item.turn}})">{{item.award}}</text>
+					</view>
+				</view>
+
+				
+			</view>
+
+			<view bindtap="getLottery" class="canvas-btn {{btnDisabled}}"><image src='../../images/coupon_06.png'></image></view>		
+		</view>
+
+		<view class="main-container">
+			<view class="main-container-btn">
+				<button bindtap="getLottery"  type="primary">抽奖一次</button>	
+			</view>
+	
+		</view>
+
+	</view>
+ <!-- <modal hidden="{{hidden}}" title="领优惠券" confirm-text="获得抽奖一次" cancel-text="取消" bindcancel="cancel" bindconfirm="confirm" no-cancel="{{nocancel}}">
+    
+       <view class="row-wrap">
+     <view class="label">最想买的车型</view>
+     <picker bindchange="bindCasPickerChange" value="{{casIndex1}}" range="{{casArray}}">
+      <view>
+       <text>{{casArray[casIndex]}}</text>
+      </view>
+     </picker>
+    </view>
+    <view class="section {{reply?'on':'off'}}">
+    <input name="other" placeholder="请输入所预约项目" type="text"/>
+    </view>
+        
+  <radio-group class="radio-group" bindchange="radioChange">打算购车时间
+    <label class="radio" wx:for="{{items}}" wx:key="*this">
+      <radio value="{{item.name}}" checked="{{item.checked}}"/>{{item.value}}
+    </label>
+  </radio-group>
+  <view class="section">
+    <text>可接受的价位</text><input placeholder="" auto-focus/>
+  </view>
+   <radio-group class="radio-group" bindchange="radioChange">付款方式
+    <label class="radio1" wx:for="{{items1}}" wx:key="*this">
+      <radio value="{{item.name}}" checked="{{item.checked}}"/>{{item.value}}
+    </label>
+  </radio-group>
+  <view class="section section-name">
+    <text>姓  名</text><input placeholder="" auto-focus type='text'/>
+  </view>
+  <view class=" section section-tel">
+    <text>手机号</text><input maxlength="13" placeholder="" auto-focus type='number'/>
+  </view>
+  <view class="section section-yz">
+    <text>验证码</text><input placeholder="" auto-focus type='number'/><button  class='coupon-but'>获取验证码</button>
+  </view>
+</modal> -->
+</view>
+<!-- 优惠券 end -->

@@ -1,0 +1,63 @@
+<!--pages/consult/consult.wxml-->
+<!-- 菜单 -->
+<view>
+  <my-component>
+    <!-- 这部分内容将被放置在组件 <slot> 的位置上 -->
+  </my-component>
+</view>
+<!-- banner begin -->
+<view class='factoryoutlet-banner'>
+  <navigator url="..">
+      <image src='../../images/348151056859823827.jpg'></image>
+  </navigator>
+</view>
+<!-- banner end -->
+<!-- 厂家直销 begin -->
+<view class='factoryoutlet-content'>
+    <view class='factoryoutlet-top'>
+        <view class='factoryoutlet-topbox'>
+            <view class='factoryoutlet-topboximg'>
+                <image src='../../images/cjzx_01_03.png'></image>
+            </view>
+            <view class='factoryoutlet-toptext'>
+                <view>  <text class='f23'>吉利博越</text></view>
+                <view><text class='f19 '>1.8TD自动两驱智联型4G互联版</text></view>
+                <view class='factoryoutlet-of26'><text class='of26'>￥500</text></view>
+                 <navigator url='../CommodityDetails/CommodityDetails?data={{a}}'><button class='factoryoutlet-subscribe'>立即预约</button></navigator>
+            </view>
+        </view>
+    </view>
+    <view class='factoryoutlet-center'>
+      <view class='factoryoutlet-centerbox'>
+        <view class='factoryoutlet-centerboximg'>
+           <image src='../../images/cjzx_07.png'></image>
+        </view>
+        <view>
+             <view>  <text class='f23'>哈佛H6蓝标</text></view>
+          
+             <view class=''><text class='of22'>￥500</text>
+                 <navigator url='../CommodityDetails/CommodityDetails'><button class='factoryoutlet-subscribe1'>立即预约</button></navigator>
+               </view>
+        </view>
+      </view>
+      <view class='factoryoutlet-centerbox'></view>
+      <view class='factoryoutlet-centerbox'></view>
+      <view class='factoryoutlet-centerbox'></view>
+      <view class='factoryoutlet-centerbox'></view>
+      <view class='factoryoutlet-centerbox'></view>
+    </view>
+    <view class='factoryoutlet-bottom'>
+        <view class='factoryoutlet-bottombox'>
+            <view class='factoryoutlet-bottomboximg'>
+              <image src='../../images/cjzx_03.png'></image>
+            </view>
+             <view>
+                <view>  <text class='f19'>别克英朗（2018款15T双离合进取型）</text></view>
+                <view class=''><text class='of22'>￥99</text> </view> 
+                     <navigator url='../CommodityDetails/CommodityDetails'><button class='factoryoutlet-subscribe2'>￥99可抵1000元</button></navigator>
+                 
+             </view>
+        </view>
+    </view>
+</view>
+<!-- 厂家直销 end -->

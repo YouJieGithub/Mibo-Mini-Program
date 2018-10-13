@@ -1,0 +1,163 @@
+/* pages/Purchases/Purchases.wxss */
+.Interestedmodels{
+  padding: 0 24rpx;
+  margin-top: 35rpx;
+  font-size: 20rpx;
+}
+.section{
+  display: flex;
+  justify-content: space-around;
+  border-bottom: dashed 1rpx #858585;
+  line-height: 60rpx;
+  background:url('data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAA8AAAAdCAYAAAB1yDbaAAAAGXRFWHRTb2Z0d2FyZQBBZG9iZSBJbWFnZVJlYWR5ccllPAAAA4RpVFh0WE1MOmNvbS5hZG9iZS54bXAAAAAAADw/eHBhY2tldCBiZWdpbj0i77u/IiBpZD0iVzVNME1wQ2VoaUh6cmVTek5UY3prYzlkIj8+IDx4OnhtcG1ldGEgeG1sbnM6eD0iYWRvYmU6bnM6bWV0YS8iIHg6eG1wdGs9IkFkb2JlIFhNUCBDb3JlIDUuNi1jMTM4IDc5LjE1OTgyNCwgMjAxNi8wOS8xNC0wMTowOTowMSAgICAgICAgIj4gPHJkZjpSREYgeG1sbnM6cmRmPSJodHRwOi8vd3d3LnczLm9yZy8xOTk5LzAyLzIyLXJkZi1zeW50YXgtbnMjIj4gPHJkZjpEZXNjcmlwdGlvbiByZGY6YWJvdXQ9IiIgeG1sbnM6eG1wTU09Imh0dHA6Ly9ucy5hZG9iZS5jb20veGFwLzEuMC9tbS8iIHhtbG5zOnN0UmVmPSJodHRwOi8vbnMuYWRvYmUuY29tL3hhcC8xLjAvc1R5cGUvUmVzb3VyY2VSZWYjIiB4bWxuczp4bXA9Imh0dHA6Ly9ucy5hZG9iZS5jb20veGFwLzEuMC8iIHhtcE1NOk9yaWdpbmFsRG9jdW1lbnRJRD0ieG1wLmRpZDo4Y2ZkMDllMi0xMjg1LThmNGItYTJjZS00ZjBmZTU3Zjc4MDEiIHhtcE1NOkRvY3VtZW50SUQ9InhtcC5kaWQ6MjY4NzlGQzFDMTVBMTFFODk4QjFCQTg4REZGMEI0MzUiIHhtcE1NOkluc3RhbmNlSUQ9InhtcC5paWQ6MjY4NzlGQzBDMTVBMTFFODk4QjFCQTg4REZGMEI0MzUiIHhtcDpDcmVhdG9yVG9vbD0iQWRvYmUgUGhvdG9zaG9wIENDIDIwMTcgKFdpbmRvd3MpIj4gPHhtcE1NOkRlcml2ZWRGcm9tIHN0UmVmOmluc3RhbmNlSUQ9InhtcC5paWQ6YTcxYzQzNzAtZGQ3NS05ZDRmLTg3NjYtODM1NGNiYTZiMzkwIiBzdFJlZjpkb2N1bWVudElEPSJhZG9iZTpkb2NpZDpwaG90b3Nob3A6NzEwYzMwZjItYjNlMS0xMWU4LThhZTQtOGNiNzY3NjkzNDQ1Ii8+IDwvcmRmOkRlc2NyaXB0aW9uPiA8L3JkZjpSREY+IDwveDp4bXBtZXRhPiA8P3hwYWNrZXQgZW5kPSJyIj8+MlZ1MwAAAWVJREFUeNqUlL1KBDEQx3O5VNY2FvcUgnqndwhWgoi1jQ/gqbBbWgp2e4If7yCKiFgKFn7cnXLca2i/trL+IxMIMW5mAsPsZPOb/Gey2UaWZUdKqR3YdlEUL0owNFkL9pzn+aoEblRVpQCd43mX5tpQMOburLC4D3dKcyMk67JhSnAAN6DwiZPgV7Y/ghKWkPQtubOnwJZwQuG4ToGOTSJB5iWwJXTYsJfggsLXmII/NYcDkD2FvVgPdKqjWLzvKbA9aLNhr4nuGIdI0GPJDko4g+u7ErTkW4YCW/sxhY8imBIcwn3AZsQwpF/CzcG+jBC8g9ukcE0LwGsP7EL+uxHu+A1bcffdCKV27I7unUmA93AbsMpJ9d8bJrgAcMK6VQBvCHSXYRJbZxI1zgOcsn4GAK+C5kzremI88BZui47DNmeUOgkTkfpvjeFolmX5AL9O8XLd3zJW8yzsE7YIcCj51n8EGACVHJSNnN82NgAAAABJRU5ErkJggg==') no-repeat center right;
+  background-size: 15rpx 29rpx;
+}
+.section__title{
+  width: 30%;
+}
+.section__title text{
+  color: #999999;
+}
+picker{
+  width: 70%;
+  display: flex;
+  justify-content: space-between;
+}
+.picker text{
+  padding: 0 100rpx;
+}
+.ScheduleCarPurchases{
+  margin: 41rpx 24rpx 0 24rpx;
+  font-size: 20rpx;
+  border-bottom: dashed 1rpx #333333;
+}
+.radio-group{
+  padding: 24rpx 0;
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+}
+.radio .wx-radio-input{
+  display: none;
+}
+.radiot{
+  width: 150rpx;
+	line-height: 41rpx;
+	border: solid 1rpx #333333;
+  text-align: center;
+}
+.radiof{
+  display: inline-block;
+  width: 150rpx;
+	line-height: 41rpx;
+	border: solid 1rpx #4ea5f2;
+  text-align: center;
+}
+.radio-checked{
+  border: solid 1rpx #cccccc;
+  background: red;
+}
+/* 付款方式 */
+.paymentMethod{
+  margin-top: 35rpx;
+  padding: 0 24rpx;
+  font-size: 20rpx;
+}
+.paymentMethod view{
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+  border-bottom: dashed 1rpx #333333;
+}
+.paymentMethod view view{
+  margin-top: 30rpx;
+   margin-bottom: 34rpx;
+  text-align: center;
+  width: 150rpx;
+	height: 41rpx;
+	border: solid 1rpx #333333;
+}
+.section-region{
+  margin: 0 24rpx;
+  margin-top: 20rpx;
+  padding: 18rpx 0;
+  display: flex;
+  justify-content: space-between;
+  font-size: 20rpx;
+   background:url('data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAA8AAAAdCAYAAAB1yDbaAAAAGXRFWHRTb2Z0d2FyZQBBZG9iZSBJbWFnZVJlYWR5ccllPAAAA4RpVFh0WE1MOmNvbS5hZG9iZS54bXAAAAAAADw/eHBhY2tldCBiZWdpbj0i77u/IiBpZD0iVzVNME1wQ2VoaUh6cmVTek5UY3prYzlkIj8+IDx4OnhtcG1ldGEgeG1sbnM6eD0iYWRvYmU6bnM6bWV0YS8iIHg6eG1wdGs9IkFkb2JlIFhNUCBDb3JlIDUuNi1jMTM4IDc5LjE1OTgyNCwgMjAxNi8wOS8xNC0wMTowOTowMSAgICAgICAgIj4gPHJkZjpSREYgeG1sbnM6cmRmPSJodHRwOi8vd3d3LnczLm9yZy8xOTk5LzAyLzIyLXJkZi1zeW50YXgtbnMjIj4gPHJkZjpEZXNjcmlwdGlvbiByZGY6YWJvdXQ9IiIgeG1sbnM6eG1wTU09Imh0dHA6Ly9ucy5hZG9iZS5jb20veGFwLzEuMC9tbS8iIHhtbG5zOnN0UmVmPSJodHRwOi8vbnMuYWRvYmUuY29tL3hhcC8xLjAvc1R5cGUvUmVzb3VyY2VSZWYjIiB4bWxuczp4bXA9Imh0dHA6Ly9ucy5hZG9iZS5jb20veGFwLzEuMC8iIHhtcE1NOk9yaWdpbmFsRG9jdW1lbnRJRD0ieG1wLmRpZDo4Y2ZkMDllMi0xMjg1LThmNGItYTJjZS00ZjBmZTU3Zjc4MDEiIHhtcE1NOkRvY3VtZW50SUQ9InhtcC5kaWQ6MjY4NzlGQzFDMTVBMTFFODk4QjFCQTg4REZGMEI0MzUiIHhtcE1NOkluc3RhbmNlSUQ9InhtcC5paWQ6MjY4NzlGQzBDMTVBMTFFODk4QjFCQTg4REZGMEI0MzUiIHhtcDpDcmVhdG9yVG9vbD0iQWRvYmUgUGhvdG9zaG9wIENDIDIwMTcgKFdpbmRvd3MpIj4gPHhtcE1NOkRlcml2ZWRGcm9tIHN0UmVmOmluc3RhbmNlSUQ9InhtcC5paWQ6YTcxYzQzNzAtZGQ3NS05ZDRmLTg3NjYtODM1NGNiYTZiMzkwIiBzdFJlZjpkb2N1bWVudElEPSJhZG9iZTpkb2NpZDpwaG90b3Nob3A6NzEwYzMwZjItYjNlMS0xMWU4LThhZTQtOGNiNzY3NjkzNDQ1Ii8+IDwvcmRmOkRlc2NyaXB0aW9uPiA8L3JkZjpSREY+IDwveDp4bXBtZXRhPiA8P3hwYWNrZXQgZW5kPSJyIj8+MlZ1MwAAAWVJREFUeNqUlL1KBDEQx3O5VNY2FvcUgnqndwhWgoi1jQ/gqbBbWgp2e4If7yCKiFgKFn7cnXLca2i/trL+IxMIMW5mAsPsZPOb/Gey2UaWZUdKqR3YdlEUL0owNFkL9pzn+aoEblRVpQCd43mX5tpQMOburLC4D3dKcyMk67JhSnAAN6DwiZPgV7Y/ghKWkPQtubOnwJZwQuG4ToGOTSJB5iWwJXTYsJfggsLXmII/NYcDkD2FvVgPdKqjWLzvKbA9aLNhr4nuGIdI0GPJDko4g+u7ErTkW4YCW/sxhY8imBIcwn3AZsQwpF/CzcG+jBC8g9ukcE0LwGsP7EL+uxHu+A1bcffdCKV27I7unUmA93AbsMpJ9d8bJrgAcMK6VQBvCHSXYRJbZxI1zgOcsn4GAK+C5kzremI88BZui47DNmeUOgkTkfpvjeFolmX5AL9O8XLd3zJW8yzsE7YIcCj51n8EGACVHJSNnN82NgAAAABJRU5ErkJggg==') no-repeat center right;
+  background-size: 15rpx 29rpx;
+  border-bottom: dashed 1rpx #333333;
+}
+.section-region picker{
+  display: flex;
+  flex-direction: column;
+  align-items: flex-end;
+}
+.picker-region{
+  padding: 0 100rpx;
+}
+/* 手机号验证码 */
+/* .authcode{
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  margin-top: 46rpx;
+  padding: 0 24rpx;
+  font-size: 20rpx;
+  width: 702rpx;
+	height: 178rpx;
+  background-color: #eeeeee;
+}
+.cellphonenumber{
+  margin-bottom: 33rpx;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.cellphonenumber input{
+  margin-left: 10rpx;
+  width: 272rpx;
+	height: 38rpx;
+	border: solid 1rpx #333333;
+}
+.verification-code{
+  display: flex;
+  justify-content: center;
+}
+.verification-code view:first-child{
+  display: flex;
+  align-items: center;
+}
+.verification-code view:first-child input{
+  margin-left: 10rpx;
+  width: 148rpx;
+	border: solid 1rpx #333333;
+}
+.verification-code view:last-child{
+  width: initial;
+}
+.verification-code view:last-child button{
+    padding: 0 19rpx;
+  	font-size: 18rpx;
+    color: #4ea5f2;
+    border: none;
+} */
+/* 提交按钮 */
+.Submit{
+  position:fixed;
+  bottom: 10rpx;
+}
+.Submit button{
+  width: 750rpx;
+	line-height: 79rpx;
+  border-radius: 0;
+  font-size: 30rpx;
+  font-weight: bolder;
+  color: #ffffff;
+	background-color: #4ea5f2;
+}
+/* 登录模态窗口 */
+.index-loginPage{
+  display: none;
+}

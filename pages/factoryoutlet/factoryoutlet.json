@@ -1,0 +1,6 @@
+{
+  "navigationBarTitleText": "厂家直销",
+  "usingComponents": {
+    "my-component": "../../../Component/Menu/Menu"
+  }
+}

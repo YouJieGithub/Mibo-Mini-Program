@@ -1,0 +1,37 @@
+<!--pages/consult/consult.wxml-->
+<!-- 菜单 -->
+<view>
+  <my-component>
+    <!-- 这部分内容将被放置在组件 <slot> 的位置上 -->
+  </my-component>
+</view>
+<!-- banner begin -->
+<view class='consult-banner'>
+  <navigator url="../Advisorydetails/Advisorydetails">
+      <image src='../../images/221651172480827980.jpg'></image>
+  </navigator>
+</view>
+<!-- banner end -->
+<!-- 汽车咨询 begin -->
+<view class='consult-center'>
+    <view class='consult-content'>
+        <view>
+          <navigator url="../Advisorydetails/Advisorydetails">
+            <image src='../../images/226718664561129124.jpg' class='consult-img'></image>
+          </navigator>
+        </view>
+        <view class='consult-right'>
+            <view class='f24'><navigator>通用汽车，通用汽车介绍</navigator> </view>
+            <view class='f18'>
+              <navigator>
+                 <text>
+                    通用汽车是全球最大的汽车公司，他有着悠久的产业历史，今天就请跟随电动邦小编一起走进这个著名的产业公司，了解一下通用汽车。
+                 </text> 
+              </navigator>
+              </view>
+            <view class=' consult-time f18'><navigator>2018年6月9日</navigator></view>
+        </view>
+    </view>
+</view>
+
+<!-- 汽车资讯 end -->

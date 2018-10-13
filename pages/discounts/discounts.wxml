@@ -1,0 +1,86 @@
+<!-- 优惠福利 begin  -->
+<!-- 菜单 -->
+<view>
+  <my-component>
+    <!-- 这部分内容将被放置在组件 <slot> 的位置上 -->
+  </my-component>
+</view>
+<!-- banner gegin -->
+<view class='discounts-banner'>
+  <image src='../../images/401224386031145537.png' class='mybanner'>
+    
+  </image>
+</view>
+<!-- banner end -->
+<view class='discounts'>
+  <view class='discounts-box'>
+      <view class='discounts-car'>
+          <view class="discounts-column">
+            <view class="discounts-item">
+              <view><image src='../../images/834619103304985859.png' class='discounts-sf'></image></view>
+              <view><image src='../../images/287215434498893118.png' class='discounts-cars'></image></view>
+              <view class='discounts-text'><text>哈佛H6蓝标</text></view>
+            </view>
+            <view class="discounts-item">
+              <view><image src='../../images/834619103304985859.png' class='discounts-sf'></image></view>
+              <view><image src='../../images/287215434498893118.png' class='discounts-cars'></image></view>
+              <view class='discounts-text'><text>哈佛H6蓝标</text></view>
+            </view>
+           </view>
+          <view class="discounts-column">
+            <view class="discounts-item">
+              <view><image src='../../images/834619103304985859.png' class='discounts-sf'></image></view>
+              <view><image src='../../images/287215434498893118.png' class='discounts-cars'></image></view>
+              <view class='discounts-text'><text>哈佛H6蓝标</text></view>
+            </view>
+            <view class="discounts-item">
+              <view><image src='../../images/834619103304985859.png' class='discounts-sf'></image></view>
+              <view><image src='../../images/287215434498893118.png' class='discounts-cars'></image></view>
+              <view class='discounts-text'><text>哈佛H6蓝标</text></view>
+            </view>
+          </view>
+      </view>
+      <view class='discounts-money'>
+          <view class='f34 corange'><text>一元可低2000元</text></view>
+           <view><button class='discounts-but'>立即领取</button></view>
+            <view class='f22 corange discounts-ylq'><text>已有300人领取</text></view>
+      </view>
+  </view>
+  <view class='discounts-box'>
+      
+      <view class='discounts-money discounts-money1'>
+          <view class='f34 corange'><text>一元可低2000元</text></view>
+           <view><button class='discounts-but'>立即领取</button></view>
+            <view class='f22 corange discounts-ylq'><text>已有300人领取</text></view>
+      </view>
+      <view class='discounts-car'>
+          <view class="discounts-column">
+            <view class="discounts-item">
+              <view><image src='../../images/834619103304985859.png' class='discounts-sf'></image></view>
+              <view><image src='../../images/287215434498893118.png' class='discounts-cars'></image></view>
+              <view class='discounts-text'><text>哈佛H6蓝标</text></view>
+            </view>
+            <view class="discounts-item">
+              <view><image src='../../images/834619103304985859.png' class='discounts-sf'></image></view>
+              <view><image src='../../images/287215434498893118.png' class='discounts-cars'></image></view>
+              <view class='discounts-text'><text>哈佛H6蓝标</text></view>
+            </view>
+           </view>
+          <view class="discounts-column">
+            <view class="discounts-item">
+              <view><image src='../../images/834619103304985859.png' class='discounts-sf'></image></view>
+              <view><image src='../../images/287215434498893118.png' class='discounts-cars'></image></view>
+              <view class='discounts-text'><text>哈佛H6蓝标</text></view>
+            </view>
+            <view class="discounts-item">
+              <view><image src='../../images/834619103304985859.png' class='discounts-sf'></image></view>
+              <view><image src='../../images/287215434498893118.png' class='discounts-cars'></image></view>
+              <view class='discounts-text'><text>哈佛H6蓝标</text></view>
+            </view>
+          </view>
+      </view>
+  </view>
+  <view></view>
+</view>
+<view class='discounts-yhqbox'><button class='discounts-yhq'>领优惠劵</button></view>
+<!-- 优惠福利 end -->

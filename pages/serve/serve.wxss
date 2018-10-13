@@ -1,0 +1,39 @@
+/* 服务 begin */
+.serve-banner{
+  margin-top: 21rpx;
+}
+.serve-banner image{
+  	width: 749rpx;
+	height: 250rpx;
+}
+.serve-box{
+   display: flex;
+  flex-direction: column;
+  align-content: space-between;
+  margin: 20rpx 0;
+  padding: 24rpx;
+}
+.serve-item {
+  flex-basis: 100%;
+  display: flex;
+  justify-content: space-between;	
+}
+.serve-item view{
+  margin: 40rpx 0;
+  width: 307rpx;
+	height: 94rpx;
+  text-align: center;
+  line-height: 94rpx;
+  font-size: 30rpx;
+  background-color: #b0b0b0;
+}
+.serve-b{
+  	background-color: #badefe!important;
+}
+.serve-p{
+  background-color: #fec2c2!important;
+}
+.serve-y{
+  background-color: #fef1c2!important;
+}
+/* 服务 end */

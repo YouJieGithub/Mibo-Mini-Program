@@ -1,0 +1,331 @@
+<!--pages/index/index.wxml-->
+<!-- 头部 -->
+<view class='header'>
+<!-- 敏优车+搜索框+头像 -->
+  <!-- 敏优车 -->
+  <view class='Mmyc'>
+    <navigator url='' hover-class="navigator-hover">敏优车</navigator>  
+  </view>
+    <!-- 搜索框 -->
+  <view class='Msearchbox'>
+    <navigator url='' hover-class="navigator-hover"></navigator>
+  </view>
+  <!-- 用户头像 -->
+  <view class='Museravatar' bindtap='FaceloginRoute'>
+    <navigator url="{{pageRoute.headPortraitPath}}" hover-class="navigator-hover"></navigator>
+  </view>
+</view>
+<!-- 菜单栏 -->
+<view class='Mmenubar'>
+  <view>首页</view>
+  <navigator url='../newcarsale/newcarsale'>进入车库</navigator>
+  <navigator url='../consult/consult'>论坛</navigator>
+  <navigator url='../serve/serve'>服务</navigator>
+</view>
+<!-- 轮播图 -->
+<swiper class='Mslideshow' indicator-dots="{{indicatorDots}}" autoplay="{{autoplay}}" interval="{{interval}}" duration="{{duration}}"
+circular="{{circular}}">
+  <block wx:for="{{imgUrls}}" wx:key="*this">
+    <swiper-item>
+      <image src="{{item}}" class="slide-image" bindtap='imageTap' data-url='{{url}}' mode="aspectFit"/>
+    </swiper-item>
+  </block>
+</swiper>
+<!-- 惠+新+约+券 -->
+<view class='discounts'>
+  <block wx:for="{{Preferential}}" wx:key="*this">
+    <navigator url='{{item.url}}' hover-class="navigator-hover">
+      <image src="{{item.images}}"></image>
+      <text>{{item.text}}</text>
+    </navigator>
+  </block>
+  </view>
+  <!-- 购车快选 -->
+  <view class='MFastcars'>
+    <!-- 购车快选 -->
+    <view class='MFastcarstitle'>
+      <text>购车快选</text>
+    </view>
+    <!-- 价格 -->
+    <view class='MFastcarsprice'>
+      <text>价格：</text>
+      <view>
+      <block wx:for="{{MFastcars.MFastcarsprice}}" wx:key="MFastcarsprice">
+        <navigator url='' hover-class='navigator-hover'>{{item.sprice}}</navigator>
+      </block>
+      </view>
+    </view>
+    <!-- 车型 -->
+    <view class='MFastcarsmodels'>
+      <text>车型：</text>
+      <view>
+       <block wx:for="{{MFastcars.MFastcarsmodels}}" wx:key="MFastcarsmodels">
+        <navigator url='' hover-class='navigator-hover'>{{item.smodels}}</navigator>
+        </block>
+      </view>
+    </view>
+  </view>
+  <!-- 本月特惠 begin -->
+  <view class='preferential'>
+    <view class='preferential-title'>
+      <text>本月特惠</text>
+      <navigator url='../mydiscount/mydiscount' hover-class='navigator-hover'>更多>></navigator>
+    </view>
+    <view class='preferential-content'>
+    <!-- 免服务费 -->
+       <view class='preferential-toll-free'>
+          <view><image src='../../images/shopindex_25.jpg'></image></view>
+          <view>
+            <text>吉利博越</text>
+            <text>1.8TD自动两驱智联型</text>
+          </view>
+          <view>
+            <navigator url='' hover-class='navigator-hover'>立即预订</navigator>
+            <text>免服务费</text>
+          </view>
+       </view>
+       <!-- 低首付+限时预售 -->
+       <view class='preferential-Timebooking'>
+          <!-- 低首付 -->
+          <view class='preferential-Timebooking-Lower'>
+              <view>
+                <text>奔驰GLA</text>
+                <text>200动感型</text>
+              </view>
+              <view>
+                <view>
+                  <text>限时特卖</text>
+                  <text>低首付</text>
+                  </view>
+                <view>
+                  <image src='../../images/shopindex_28.png'></image>
+                </view>
+              </view>
+          </view>
+          <!-- 限时预售 -->
+          <view class='preferential-Timebooking-Time'>
+              <view>1天：6：30：32</view>
+              <view>
+                <view><image src='../../images/shopindex_33.png'></image></view>
+                <view>
+                  <text>限时预售</text>
+                  <text>宝马X1</text>
+                </view>
+              </view>
+              <view>
+                  <text>SDR IVE18L2时尚型</text>
+              </view>
+          </view>
+       </view>
+       <!-- 0首付 -->
+       <view class='preferential-payment'>
+          <text>0首付</text>
+          <text>更多优惠等你来拿</text>
+          <view>
+          <image src='../../images/shopindex_39_33.png'></image>            
+          </view>
+       </view>
+    </view>
+  </view>
+  <!-- 广告图1 -->
+  <view class='banner-one'>
+    <image src='../../images/870831666547412132.jpg'></image>
+  </view>
+  <!-- 优惠政策 -->
+  <view class='discounts-policy'>
+  <view class='preferential-title'>
+      <text>优惠政策</text>
+      <navigator url='../discounts/discounts' hover-class='navigator-hover'>更多>></navigator>
+    </view>
+    <view class='discounts-contentw'>
+    <view class='discounts-content'>
+      <view>
+        <image src='../../images/shopindex_44.png'></image>        
+      </view>
+      <view><text>科鲁兹</text></view>
+      <view><text>改款320自动先锋版</text></view>
+      <view>
+        <text>￥1000劵</text>
+        <text>抵现金1000元</text>
+      </view>
+      <view>
+        <text>立即领取</text>
+      </view>
+    </view>
+    </view>
+  </view> 
+  <!-- 购车计划 -->
+  <view class='purchases'>
+    <view class='preferential-title'>
+      <text>购车计划</text>
+      <navigator url='../Purchases/Purchases' hover-class='navigator-hover'>更多>></navigator>
+    </view>
+    <!-- 内容 -->
+    <view class='purchases-center'>
+        <view class='purchases-centerA'>
+          <swiper class='purchases-centerB' indicator-dots="{{indicatorDots}}" autoplay="{{autoplay}}" interval="{{interval}}" duration="{                 {duration}}"circular="{{circular}}">
+          <block wx:for="{{imgUrls}}" wx:key="*this">
+            <swiper-item>
+                <view><image src="{{item}}" class="slide-image" bindtap='imageTap' data-url='{{url}}' mode="aspectFit"/></view>
+                <view>
+                  <text>哈佛H6蓝标</text>
+                  <navigator url='' hover-class='navigator-hover'>立即预约</navigator>
+                  </view>
+                
+            </swiper-item>
+          </block>
+        </swiper>
+        </view>
+        <view class='purchases-center-redpacket'>
+          <image src='../../images/redpacket1.jpg'></image>
+        </view>
+    </view>
+  </view>
+  <!-- 本周销量榜+高性价比价+热门人气榜 TAB切换 -->
+  <view>
+    <view class="nav bc_white">
+        <view class="{{selected?'red':'default'}}" bindtap="selected">本周销量榜</view>
+        <view class="{{selected1?'red':'default'}}" bindtap="selected1">高性价比价</view>
+        <view class="{{selected2?'red':'default'}}" bindtap="selected2">热门人气榜</view>
+    </view>
+    <view class="{{selected?'show':'hidden'}}">
+    <view class='chartoftheweek'>
+      <view class='chartoftheweek-center' wx:for="{{Salesweek}}" wx:key="*this" >
+        <view class='vehicleinformation'><image src='../../images/shopindex_54.png'></image></view>
+        <view><image src='{{item.url}}' lazy-load="ture"></image></view>
+        <view>
+          <image src='../../images/shopindex_70.png'></image>
+        </view>
+        <view>
+            厂家指导价：<text>{{item.productPrice}}元</text>
+          </view>
+        <view>
+          <view>
+            <text>{{item.productName}}</text>
+            <text>{{item.productTypeName}}</text>
+          </view>
+          <view>
+          <view>首付：<text>{{item.downPayments}}元</text></view>
+            <view>月供：<text>{{item.monthlySupply}}元</text></view>
+            <navigator  url='../CommodityDetails/CommodityDetails?id={{item.id}}' hover-class='navigator-hover'>立即预约</navigator>
+          </view>
+        </view>
+      </view>
+      </view>
+    </view>
+    <view class="{{selected1?'show':'hidden'}}">for activity</view>
+    <view class="{{selected2?'show':'hidden'}}">for ctivity</view>
+</view>
+<!-- 广告图2 -->
+<view class='banner-one'>
+    <image src='../../images/qsgcwyl.jpg'></image>
+  </view>
+<!-- 装潢套餐 -->
+<view class='Decorationpackages'>
+  <view class='preferential-title'>
+      <text>装潢套餐</text>
+      <navigator url='../consult/consult' hover-class='navigator-hover'>更多>></navigator>
+    </view>
+   <!-- 内容  -->
+   <view class='Decorationpackages-center'>
+    <view class='Decorationpackages-center-one'>
+      <view><image src='../../images/shopindex_99.png'></image></view>
+        <text>哈佛H6蓝标</text>
+        <text>三年维修费免</text>
+        <text>除配件外</text>
+    </view>
+    <view class='Decorationpackages-center-two'>
+      <view>
+        <view><image src='../../images/shopindex_99.jpg'></image></view>
+        <view>
+          <navigator url='../CommodityDetails/CommodityDetails' hover-class='navigator-hover'>立即预约</navigator>
+          <text style='font-family:"方正行楷简体"'>送</text>
+          <view>
+            <text>全车贴膜</text>
+            <text>脚垫</text>
+          </view>
+          <view>
+            <text>正品防爆膜</text>
+            <text>定制高品质大色围脚垫</text>
+          </view>
+        </view>
+      </view>
+      <view class='Decorationpackages-center-three'>
+        <view>
+          <text>迈锐宝</text>
+          <text>2018款530T自动豪华版</text>
+          <view><image src='../../images/shopindex_107.png'></image></view>
+        </view>
+        <view class='Decorationpackages-center-four'>
+          <text>宝马X1</text>
+          <text>SDR IVE18L2时尚型</text>
+          <view><image src='../../images/shopindex_109_107.png'></image></view>
+        </view>
+      </view>
+    </view>
+   </view>
+</view>
+<!-- 广告图3 -->
+<view class='banner-one'>
+    <image src='../../images/754350896203845397.jpg'></image>
+</view>
+<!-- 旅游记 -->
+<view class='Traveldown'>
+  <view class='Traveldown-title'><text>旅游记</text></view>
+   <view class="nav bc_white">
+        <view class="{{selected?'red':'default'}}" bindtap="selected">视频</view>
+        <view class="{{selected1?'red':'default'}}" bindtap="selected1">文章</view>
+    </view>
+     <view class="{{selected?'show':'hidden'}}">
+     <view class='Traveldownvideo'>
+        <view class='Traveldown-video'>
+        <view><video></video></view>
+        <view>
+          <text>青藏之旅第一期</text>
+          <text>2018年8月8日</text>
+        </view>
+      </view>
+      <view class='Traveldown-video'>
+        <view><video></video></view>
+        <view>
+          <text>青藏之旅第一期</text>
+          <text>2018年8月8日</text>
+        </view>
+      </view>
+     </view>
+      <view class='TraveldownvideoNav'><navigator url='../videodetails/videodetails' hover-class='navigator-hover'>了解更多>></navigator></view>
+     </view>
+    <view class="{{selected1?'show':'hidden'}}">
+    <view class='Traveldownarticle'>
+      <view class='Traveldown-article'>
+        <view><image src='../../images/467046927263051009.jpg'></image></view>
+        <view>
+          <text>美丽的青藏高原</text>
+          <text>朋友你去过青藏高原吗？在那里有一座座连绵起伏的山峰叫昆仑山。它的平均海拔在5500—6000米，山脉全长2500公里……</text>
+          <text>2018-06-08</text>
+        </view>
+      </view>
+       <view class='Traveldown-article'>
+        <view><image src='../../images/467046927263051009.jpg'></image></view>
+        <view>
+          <text>美丽的青藏高原</text>
+          <text>朋友你去过青藏高原吗？在那里有一座座连绵起伏的山峰叫昆仑山。它的平均海拔在5500—6000米，山脉全长2500公里……</text>
+          <text>2018-06-08</text>
+        </view>
+    </view>
+         <view class='TraveldownvideoNav'><navigator url='../Travelarticles/Travelarticles' hover-class='navigator-hover'>了解更多>></navigator></view>
+      </view>
+    </view>
+</view>
+<!-- 品牌厂商 -->
+<view class='brands'>
+  <view><image src='../../images/shopindex_111.jpg'></image></view>
+</view>
+<!-- 版权 -->
+<view class='copyright'>
+  <view><text>Copyright 敏博金服 版权所有 All Rights Reserved 陕ICP备17006210号</text></view>
+</view>
+<!-- 登录页面的引用 -->
+<view class='{{indexloginPage}}' bindtap='closemodal'>
+<loginPage bindmyevent="myEventListener"></loginPage>
+</view>

@@ -1,0 +1,40 @@
+<!-- 快选车库 begin -->
+<!-- 菜单 -->
+<view>
+  <my-component>
+    <!-- 这部分内容将被放置在组件 <slot> 的位置上 -->
+  </my-component>
+</view>
+<view class='quickcar'>
+    <view class='quickcar-box'>
+      <view class='quickcar-img'>
+        <image src='../../images/906482955542837688.png'></image>
+      </view>
+      <view class='quickcar-right'>
+        <view>
+            <text class='f23'>吉利博越 </text>
+        </view>
+        <view><text class='f19'>（1.8TD自动两驱智联型4G互联版）</text></view>
+        <view>
+            <text class='quickcar-zdj'>指导价：129800元 </text>
+        </view>
+        <view>
+            <text class='red f23'>首付：36666元</text><text class='red f23'> 月供：3588元</text>
+        </view>
+        <view class='textcenter'>
+            <text class='f24 forage'>立即购买就减5000元</text>
+        </view>
+        <view>
+             
+              <navigator url='../CommodityDetails/CommodityDetails'><button class='quickcar-subscribe'>立即预约</button></navigator>
+        </view>
+      </view>
+    </view>
+    <view class='quickcar-box'></view>
+  
+</view>
+<view class='quickcar'>
+ <view class='quickcar-box'></view>
+  <view class='quickcar-box'></view>
+</view>
+<!-- 快选车库 end -->

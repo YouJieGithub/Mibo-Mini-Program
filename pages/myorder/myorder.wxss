@@ -1,0 +1,34 @@
+/* 我的订单 begin */
+.myorder{
+  padding: 25rpx;
+}
+.myorder-box{
+  padding: 10rpx;
+  width: 683rpx;
+	height: 348rpx;
+	border: solid 1rpx #333333;
+ 
+}
+.myorder-ljyy{
+  text-align: center;
+}
+.myorder-ljyy text{
+  font-size: 30rpx;
+	color: #ff5a00;
+}
+
+.myorder-content image{
+  width: 307rpx;
+	height: 148rpx;
+  padding: 50rpx 5rpx;
+  float: left; 
+}
+.myorder-form{
+  font-size: 20rpx;
+  float: left;
+  padding: 20rpx 0 20rpx 50rpx;
+}
+.myorder-form view{
+  padding: 2rpx 0;
+}
+/* 我的订单 end */

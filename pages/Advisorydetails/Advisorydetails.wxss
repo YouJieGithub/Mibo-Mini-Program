@@ -1,0 +1,5 @@
+/* 汽车详情  begin*/
+.advisorydetails{
+  padding: 38rpx 24rpx;
+}
+/* 汽车详情 end */

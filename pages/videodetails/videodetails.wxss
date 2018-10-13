@@ -1,0 +1,40 @@
+/* pages/videodetails/videodetails.wxss */
+.videodetails{
+  padding: 30rpx 24rpx;
+  padding-bottom: 0;
+}
+.videodetails-conter{
+  width: 702rpx;
+  height: 294rpx;
+  background: #333333;
+}
+.videodetails-conter view video{
+  width: 702rpx;
+  height: 294rpx;
+}
+.videodetails-title{
+  line-height: 80rpx;
+  display: flex;
+  justify-content: space-between;
+}
+.videodetails-title view:first-child{
+  width: 70%;
+  font-size: 32rpx;
+  color: #333333;
+}
+.videodetails-title view:first-child text:first-child{
+  margin-right: 10rpx;
+}
+.videodetails-like-comment{
+  width: 30%;
+  display: flex;
+  justify-content: space-around;
+}
+.videodetails-like image{
+  width: 32rpx;
+  height: 30rpx;
+}
+.videodetails-comment image{
+  width: 40rpx;
+	height: 32rpx;
+}

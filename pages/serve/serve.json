@@ -1,0 +1,6 @@
+{
+  "navigationBarTitleText": "服务",
+  "usingComponents": {
+    "my-component": "../../../Component/Menu/Menu"
+  }
+}

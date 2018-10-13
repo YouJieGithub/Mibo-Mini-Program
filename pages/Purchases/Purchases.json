@@ -1,0 +1,6 @@
+{
+  "navigationBarTitleText": "购车计划",
+  "usingComponents": {
+    "loginPage": "../../Component/loginPage/loginPage"
+  }
+}
