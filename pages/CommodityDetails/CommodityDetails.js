@@ -19,7 +19,7 @@ Page({
     circular:true,
     selected: true,//显示
     selected1: false,//隐藏
-    selected10:true,
+    selected10:true, 
     selected12:false,
     selected13:false,
     selected14:false,
