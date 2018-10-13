@@ -1,9 +1,11 @@
 {
   "pages":[
+    "pages/newcarsale/newcarsale",
+    "pages/factoryoutlet/factoryoutlet",
+    "pages/quickcar/quickcar",
     "pages/index/index",
     "pages/CommodityDetails/CommodityDetails",
     "pages/my/my",
-    "pages/factoryoutlet/factoryoutlet",
     "pages/discounts/discounts",
     "pages/coupon/coupon",
     "pages/Purchases/Purchases",    
@@ -11,11 +13,9 @@
     "pages/serve/serve",
     "pages/mydiscount/mydiscount",
     "pages/myorder/myorder",
-    "pages/newcarsale/newcarsale",
     "pages/consult/consult",
     "pages/Advisorydetails/Advisorydetails",
-    "pages/Travelarticles/Travelarticles",
-    "pages/quickcar/quickcar"
+    "pages/Travelarticles/Travelarticles"
   ],
  "window": {
   "backgroundTextStyle": "light",
