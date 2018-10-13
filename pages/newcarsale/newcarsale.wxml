@@ -6,7 +6,7 @@
   </my-component>
 </view>
 <view class='newcarsale'>
-    <view class='newcarsale-box'>
+    <view class='newcarsale-box' wx:for="{{carContent}}" wx:key="*this">
       <view class='newcarsale-img'>
         <image src='../../images/newcarsale_03.png'></image>
       </view>
