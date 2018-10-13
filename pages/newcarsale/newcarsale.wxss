@@ -1,12 +1,17 @@
 /* 新城特惠 begin */
-
 .newcarsale{
-  padding: 50rpx 31rpx;
+  padding: 0 31rpx;
+  height: 100%;
 }
 .newcarsale-box{
   padding: 30rpx 0;
   display: flex;
   justify-content: space-between;
+}
+.newcarsale-img{
+  display: flex;
+  justify-content: center;
+  align-items: center;
 }
 .newcarsale-img image{
   width: 247rpx;
@@ -20,40 +25,62 @@
 }
 .newcarsale-right view{
   width: 396rpx;
-	height: 36rpx;
-  line-height: 36rpx;
+  height: 40rpx;
 }
-.newcarsale-right view:nth-child(4){
-  margin-top: 10rpx;
+.newcarsale-right view:nth-of-type(1){
+  display: flex;
+  align-items: center;
+}
+.newcarsale-right view:nth-of-type(2){
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+}
+.newcarsale-right view:nth-of-type(3){
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+.newcarsale-right view:nth-of-type(4){
+  height: initial;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
 }
 .newcarsale-zdj{
-  width: 170rpx;
-	height: 19rpx;
 	font-family: MicrosoftYaHei;
 	font-size: 20rpx;
 	font-weight: normal;
 	font-stretch: normal;
-	line-height: 30rpx;
 	color: #ff7200;
 }
 .red{
   color: #ff0000;
 }
 .newcarsale-yhj{
-  	width: 71rpx;
+  width: 71rpx;
 	height: 39rpx;
 }
-.newcarsale-subscribe{
+.newcarsale-right navigator{
+  text-align: center;
   width: 140rpx;
-	height: 35rpx;
-	background-color: #ed6130;
-	border-radius: 10rpx;
+  border: 1rpx solid #ff0000;
+  border-radius: 10rpx;
   font-size: 24rpx;
-	line-height: 30rpx;
-	color: #ffffff;
-  margin: 0;
-  padding: 0;
-  left:214rpx;
-  top:-36rpx;
+  background: #ff7200;
+  color: #ffffff;
+  padding: 4rpx;
+}
+.footera{
+  display: none;
+}
+.footer{
+  display: block;
+  text-align: center;
+  line-height: 100rpx;
+}
+.footer text{
+font-size: 24rpx;
+opacity: .7
 }
 /* 新车特惠 end */

@@ -6,25 +6,26 @@
   </my-component>
 </view>
 <view class='newcarsale'>
-    <view class='newcarsale-box' wx:for="{{carContent}}" wx:key="*this">
+    <view class='newcarsale-box' wx:for="{{productList}}" wx:key="*this">
       <view class='newcarsale-img'>
-        <image src='../../images/newcarsale_03.png'></image>
+        <image src='{{item.url}}'></image>
       </view>
       <view class='newcarsale-right'>
         <view>
-            <text class='f23'>吉利博越 </text><text class='f19'>（1.8TD自动两驱智联型4G互联版）</text>
+            <text class='f23'>{{item.productTypeName}} </text><text class='f19'>{{item.productTypeName}}</text>
         </view>
         <view>
-            <text class='newcarsale-zdj'>指导价：129800元 </text>
+            <text class='newcarsale-zdj'>指导价：{{item.productPrice}}元 </text>
         </view>
         <view>
-            <text class='red f23'style='margin-right:50rpx;'>首付：36666元</text><text class='red f23'> 月供：3588元</text>
+            <text class='red f23'>首付：{{item.downPayments}}元</text><text class='red f23'> 月供：{{item.monthlySupply}}元</text>
         </view>
         <view>
              <image class="newcarsale-yhj" src='../../images/newcarsale1_03.png'></image>
-              <navigator url='../CommodityDetails/CommodityDetails'><button class='newcarsale-subscribe'>立即预约</button></navigator>
+              <navigator url='../CommodityDetails/CommodityDetails?id={{item.id}}'>立即预约</navigator>
         </view>
       </view>
-    </view>
+    </view>  
 </view>
+<view class='{{datanone}}'><text>————————\t\t\t\t\t\t已经到底了\t\t\t\t\t\t————————</text></view>
 <!-- 新车特惠 end -->

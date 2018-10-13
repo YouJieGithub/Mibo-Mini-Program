@@ -5,43 +5,62 @@ Page({
    * 页面的初始数据
    */
   data: {
-    carContent:{},  //车辆的信息内容
-    pageindex:"1"   //页数
+    productList:[],  //后台获取的内容
+    pageNumber:1,    //获取页数
+    searchLoading: true, //"上拉加载"的变量，默认false，隐藏
+    datanone:"footera"   //没有数据时的css显示
   },
 
+  /**
+       * 请求数据封装
+       */
+  fetchSearchList:function(){
+    var  that=this
+    if (that.data.searchLoading){
+      wx.request({
+        url: 'http://192.168.0.180:9797/product/getList',
+        data: {
+          pageNumber: that.data.pageNumber
+        },
+        method: 'POST',
+        header: {
+          'content-type': 'application/x-www-form-urlencoded'
+        },
+        success: res => {
+          var q = res.data.data.productList,  //获取数据量
+              w = res.data.data.pageNumber,     //获取页数
+              e = res.data.data.pageSize       //获取总数据量
+          if (q.length>0){
+            that.setData({
+              productList: this.data.productList.concat(q),
+              pageNumber:w,
+              searchLoading: true
+            })
+          } 
+          else if (q.length<e){
+            this.setData({
+              productList: this.data.productList.concat(q),
+              pageNumber: w,
+              searchLoading:false,
+              datanone:"footer"
+            })
+          }
+          console.log(that.data.searchLoading)
+        }
+      })
+    }
+  },
   /**
    * 生命周期函数--监听页面加载
    */
   onLoad: function (options) {
-    wx.request({
-      url: 'http://192.168.0.180:9797/product/getList',
-      data:{
-        pageNumber:this.data.pageindex
-      },
-      method: 'POST',
-      header: {
-        'content-type': 'application/x-www-form-urlencoded'
-      },
-      success: res => {
-        this.setData({
-          carContent: res.data.data.productList,
-          pageindex: res.data.data.pageNumber
-        })
-      },
-      complete(res) {
-        console.log(res)
-      }
-    })
+    this.fetchSearchList()
   },
-
   /**
    * 生命周期函数--监听页面初次渲染完成
    */
   onReady: function () {
-
-  },
-  onReachBottom:function(e){
-    console.log(e)
+    
   },
   /**
    * 生命周期函数--监听页面显示
@@ -74,7 +93,10 @@ Page({
    * 页面上拉触底事件的处理函数
    */
   onReachBottom: function () {
-
+    this.setData({
+      pageNumber: this.data.pageNumber+1      
+    })
+    this.fetchSearchList()
   },
 
   /**
